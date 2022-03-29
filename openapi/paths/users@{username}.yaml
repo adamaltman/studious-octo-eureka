@@ -61,6 +61,10 @@ put:
   responses:
     '200':
       description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/User.yaml
     '400':
       description: Invalid user supplied
     '404':
